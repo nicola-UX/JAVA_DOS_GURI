@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Carros Fiat500 = new Carros();
@@ -7,7 +9,7 @@ public class Main {
 
         Fiat500.exibirinformacoes();
 
-        System.out.println("\n");
+        System.out.println("");
 
         Carros Chana = new Carros();
         Chana.marca = "CAOA Changan";
@@ -16,7 +18,7 @@ public class Main {
 
         Chana.exibirinformacoes();
 
-        System.out.println("\n");
+        System.out.println("");
 
         Carros tuk_tuk = new Carros();
         tuk_tuk.marca = "Piaggio";
@@ -24,5 +26,18 @@ public class Main {
         tuk_tuk.ano = 2010;
 
         tuk_tuk.exibirinformacoes();
+
+        Scanner sc = new Scanner(System.in);
+
+        Carros carro = new Carros();
+        System.out.print("Digite a marca do carro: ");
+        carro.marca = sc.nextLine();
+        System.out.print("Digite a ano do carro: ");
+        carro.ano = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Digite o modelo do carro: ");
+        carro.modelo = sc.nextLine();
+
+        carro.exibirinformacoes();
     }
 }
