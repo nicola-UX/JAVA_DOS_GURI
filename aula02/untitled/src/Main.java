@@ -26,6 +26,7 @@ public class Main {
         tuk_tuk.ano = 2010;
 
         tuk_tuk.exibirinformacoes();
+        
 
         Scanner sc = new Scanner(System.in);
 
