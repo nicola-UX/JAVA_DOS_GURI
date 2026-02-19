@@ -44,5 +44,6 @@ public class Livro {
     public double valorTotal(){
         double totalprice = this.preco * this.qtd;
         return totalprice;
+
     }
 }
