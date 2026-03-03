@@ -45,11 +45,49 @@ public class Lanche {
     }
 
     public void setDescricao(String descricao) {
-        this.descricao = descricao;
+        if (descricao.isBlank()) {
+            System.out.println("Informe um valor Válido");
+        } else  {
+            this.descricao = descricao;
+        }
+
     }
 
     public void setValor(double valor) {
-        this.valor = valor;
+
+        if (valor <= 0) {
+            System.out.println("Informe um valor positivo");
+        } else {
+            this.valor = valor;
+            System.out.println("Valor inserido com sucesso");
+        }
+    }
+
+    private void verificaDisponibilidade() {
+        this.disponivel = this.estoque > 0;
+    }
+
+    public boolean decrementaestoqe(int quantidade) {
+        if (quantidade > 0 && quantidade <= this.estoque) {
+            this.estoque -= quantidade;
+            verificaDisponibilidade();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void acrescerEstoque(int adicionaEstoque) {
+        if (adicionaEstoque > 0) {
+            this.estoque += adicionaEstoque;
+            System.out.println("Estoque acrescendo com sucesso");
+        } else   {
+            System.out.println("Adicione um número válido");
+        }
+    }
+
+    public double valorTotal(int quantidade) {
+        return this.valor * quantidade;
     }
 
     @Override
