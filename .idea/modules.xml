@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVA_DOS_GURI.iml" filepath="$PROJECT_DIR$/.idea/JAVA_DOS_GURI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lanchonete/Lanchonete.iml" filepath="$PROJECT_DIR$/Lanchonete/Lanchonete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula 3/aula 3.iml" filepath="$PROJECT_DIR$/aula 3/aula 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02/aula02.iml" filepath="$PROJECT_DIR$/aula02/aula02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula05/aula05.iml" filepath="$PROJECT_DIR$/aula05/aula05.iml" />
+    </modules>
+  </component>
+</project>
