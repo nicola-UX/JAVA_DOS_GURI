@@ -17,15 +17,15 @@ public class Roupa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome_produto;
+    private String nome_Produto;
     private String marca;
     private double preco;
     @Enumerated(EnumType.STRING)
     private Tamanho tamanho;
     private int quantidade;
-
+//nome_Produto
     public Roupa(DadosCadastroRoupa dados) {
-        this.nome_produto = dados.nomeProduto();
+        this.nome_Produto = dados.nomeProduto();
         this.marca = dados.marca();
         this.preco = dados.preco();
         this.tamanho = dados.tamanho();

@@ -1,13 +1,13 @@
-package com.dmgomdels.lojaRopas;
+package com.dmgmodels.lojaRoupas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LojaRopasApplication {
+public class LojaRoupasApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LojaRopasApplication.class, args);
+		SpringApplication.run(LojaRoupasApplication.class, args);
 	}
 
 }
