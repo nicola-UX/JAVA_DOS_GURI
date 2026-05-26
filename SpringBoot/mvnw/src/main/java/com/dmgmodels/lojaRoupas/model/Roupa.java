@@ -17,7 +17,7 @@ public class Roupa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome_Produto;
+    private String nomeProduto;
     private String marca;
     private double preco;
     @Enumerated(EnumType.STRING)
@@ -25,7 +25,7 @@ public class Roupa {
     private int quantidade;
 //nome_Produto
     public Roupa(DadosCadastroRoupa dados) {
-        this.nome_Produto = dados.nomeProduto();
+        this.nomeProduto = dados.nomeProduto();
         this.marca = dados.marca();
         this.preco = dados.preco();
         this.tamanho = dados.tamanho();

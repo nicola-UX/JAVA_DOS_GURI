@@ -30,4 +30,9 @@ public class ControllerProduto {
     public List<Roupa> listarProdutosPorNome(@PathVariable String nomeProduto){
         return roupaRepository.findByNomeProduto(nomeProduto);
     }
+
+    @DeleteMapping("/{id}")
+    public void deletarProduto(@PathVariable Long id){
+        roupaRepository.deleteById(id);
+    }
 }
